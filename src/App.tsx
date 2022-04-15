@@ -1,7 +1,7 @@
 import React from "react";
 import Chair from "./components/Seat";
 
-import "./styles.css";
+// import "./styles.css";
 
 function App() {
   const seats = [
@@ -146,6 +146,150 @@ function App() {
     {
       id: 24,
       col: 2,
+      row: 7,
+      status: "available"
+    },
+    {
+      id: 25,
+      col: 5,
+      row: 0,
+      status: "available"
+    },
+    {
+      id: 26,
+      col: 6,
+      row: 0,
+      status: "available"
+    },
+    {
+      id: 27,
+      col: 7,
+      row: 0,
+      status: "available"
+    },
+    {
+      id: 28,
+      col: 5,
+      row: 1,
+      status: "available"
+    },
+    {
+      id: 29,
+      col: 6,
+      row: 1,
+      status: "available"
+    },
+    {
+      id: 30,
+      col: 7,
+      row: 1,
+      status: "available"
+    },
+    {
+      id: 31,
+      col: 5,
+      row: 2,
+      status: "available"
+    },
+    {
+      id: 32,
+      col: 6,
+      row: 2,
+      status: "available"
+    },
+    {
+      id: 33,
+      col: 7,
+      row: 2,
+      status: "available"
+    },
+    {
+      id: 34,
+      col: 5,
+      row: 3,
+      status: "available"
+    },
+    {
+      id: 35,
+      col: 6,
+      row: 3,
+      status: "available"
+    },
+    {
+      id: 36,
+      col: 7,
+      row: 3,
+      status: "available"
+    },
+    {
+      id: 37,
+      col: 5,
+      row: 4,
+      status: "available"
+    },
+    {
+      id: 38,
+      col: 6,
+      row: 4,
+      status: "selected"
+    },
+    {
+      id: 39,
+      col: 7,
+      row: 4,
+      status: "booked"
+    },
+    {
+      id: 40,
+      col: 5,
+      row: 5,
+      status: "available"
+    },
+    {
+      id: 41,
+      col: 6,
+      row: 5,
+      status: "available"
+    },
+    {
+      id: 42,
+      col: 7,
+      row: 5,
+      status: "selected"
+    },
+    {
+      id: 43,
+      col: 5,
+      row: 6,
+      status: "available"
+    },
+    {
+      id: 44,
+      col: 6,
+      row: 6,
+      status: "available"
+    },
+    {
+      id: 45,
+      col: 7,
+      row: 6,
+      status: "available"
+    },
+    {
+      id: 46,
+      col: 5,
+      row: 7,
+      status: "selected"
+    },
+    {
+      id: 47,
+      col: 6,
+      row: 7,
+      status: "available"
+    },
+    {
+      id: 48,
+      col: 7,
       row: 7,
       status: "available"
     }
