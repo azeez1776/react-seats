@@ -1,56 +1,168 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import Chair from "./components/Seat";
+
+import "./styles.css";
 
 function App() {
+  const seats = [
+    {
+      id: 1,
+      col: 0,
+      row: 0,
+      status: "available"
+    },
+    {
+      id: 2,
+      col: 1,
+      row: 0,
+      status: "available"
+    },
+    {
+      id: 3,
+      col: 2,
+      row: 0,
+      status: "available"
+    },
+    {
+      id: 4,
+      col: 0,
+      row: 1,
+      status: "available"
+    },
+    {
+      id: 5,
+      col: 1,
+      row: 1,
+      status: "available"
+    },
+    {
+      id: 6,
+      col: 2,
+      row: 1,
+      status: "available"
+    },
+    {
+      id: 7,
+      col: 0,
+      row: 2,
+      status: "available"
+    },
+    {
+      id: 8,
+      col: 1,
+      row: 2,
+      status: "available"
+    },
+    {
+      id: 9,
+      col: 2,
+      row: 2,
+      status: "available"
+    },
+    {
+      id: 10,
+      col: 0,
+      row: 3,
+      status: "available"
+    },
+    {
+      id: 11,
+      col: 1,
+      row: 3,
+      status: "available"
+    },
+    {
+      id: 12,
+      col: 2,
+      row: 3,
+      status: "available"
+    },
+    {
+      id: 13,
+      col: 0,
+      row: 4,
+      status: "available"
+    },
+    {
+      id: 14,
+      col: 1,
+      row: 4,
+      status: "available"
+    },
+    {
+      id: 15,
+      col: 2,
+      row: 4,
+      status: "available"
+    },
+    {
+      id: 16,
+      col: 0,
+      row: 5,
+      status: "available"
+    },
+    {
+      id: 17,
+      col: 1,
+      row: 5,
+      status: "available"
+    },
+    {
+      id: 18,
+      col: 2,
+      row: 5,
+      status: "available"
+    },
+    {
+      id: 19,
+      col: 0,
+      row: 6,
+      status: "available"
+    },
+    {
+      id: 20,
+      col: 1,
+      row: 6,
+      status: "available"
+    },
+    {
+      id: 21,
+      col: 2,
+      row: 6,
+      status: "available"
+    },
+    {
+      id: 22,
+      col: 0,
+      row: 7,
+      status: "selected"
+    },
+    {
+      id: 23,
+      col: 1,
+      row: 7,
+      status: "available"
+    },
+    {
+      id: 24,
+      col: 2,
+      row: 7,
+      status: "available"
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      {seats.map((seat) => {
+        return (
+          <Chair
+            status={seat.status}
+            col={seat.col}
+            row={seat.row}
+            id={seat.id}
+          />
+        );
+      })}
     </div>
   );
 }
