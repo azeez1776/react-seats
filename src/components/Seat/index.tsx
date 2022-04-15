@@ -20,7 +20,7 @@ function Chair({status, col, row, id}:{status:string, col:number, row:number, id
     >
  <FontAwesomeIcon 
             icon={faCouch} 
-            color={status==='available'?'green':'red'} 
+            color={status==='available'?'green':status==='booked'?'blue':'red'} 
             style={{
               fontSize:'20px'
             }}
