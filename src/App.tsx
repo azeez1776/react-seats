@@ -1,297 +1,297 @@
 import React from "react";
-import Chair from "./components/Seat";
+import Seat from "./components/Seat";
 
-// import "./styles.css";
+import "./App.css";
 
 function App() {
   const seats = [
     {
-      id: 1,
+      id: '01',
       col: 0,
       row: 0,
       status: "available"
     },
     {
-      id: 2,
+      id: '02',
       col: 1,
       row: 0,
       status: "available"
     },
     {
-      id: 3,
+      id: '03',
       col: 2,
       row: 0,
       status: "available"
     },
     {
-      id: 4,
+      id: '04',
       col: 0,
       row: 1,
       status: "available"
     },
     {
-      id: 5,
+      id: '05',
       col: 1,
       row: 1,
       status: "available"
     },
     {
-      id: 6,
+      id: '06',
       col: 2,
       row: 1,
       status: "available"
     },
     {
-      id: 7,
+      id: '07',
       col: 0,
       row: 2,
       status: "available"
     },
     {
-      id: 8,
+      id: '08',
       col: 1,
       row: 2,
       status: "available"
     },
     {
-      id: 9,
+      id: '09',
       col: 2,
       row: 2,
       status: "available"
     },
     {
-      id: 10,
+      id: '10',
       col: 0,
       row: 3,
       status: "available"
     },
     {
-      id: 11,
+      id: '11',
       col: 1,
       row: 3,
       status: "available"
     },
     {
-      id: 12,
+      id: '12',
       col: 2,
       row: 3,
       status: "available"
     },
     {
-      id: 13,
+      id: '13',
       col: 0,
       row: 4,
       status: "available"
     },
     {
-      id: 14,
+      id: '14',
       col: 1,
       row: 4,
       status: "available"
     },
     {
-      id: 15,
+      id: '15',
       col: 2,
       row: 4,
       status: "available"
     },
     {
-      id: 16,
+      id: '16',
       col: 0,
       row: 5,
       status: "available"
     },
     {
-      id: 17,
+      id: '17',
       col: 1,
       row: 5,
       status: "available"
     },
     {
-      id: 18,
+      id: '18',
       col: 2,
       row: 5,
       status: "available"
     },
     {
-      id: 19,
+      id: '19',
       col: 0,
       row: 6,
       status: "available"
     },
     {
-      id: 20,
+      id: '20',
       col: 1,
       row: 6,
       status: "available"
     },
     {
-      id: 21,
+      id: '21',
       col: 2,
       row: 6,
       status: "available"
     },
     {
-      id: 22,
+      id: '22',
       col: 0,
       row: 7,
       status: "selected"
     },
     {
-      id: 23,
+      id: '23',
       col: 1,
       row: 7,
       status: "available"
     },
     {
-      id: 24,
+      id: '24',
       col: 2,
       row: 7,
       status: "available"
     },
     {
-      id: 25,
+      id: '25',
       col: 5,
       row: 0,
       status: "available"
     },
     {
-      id: 26,
+      id: '26',
       col: 6,
       row: 0,
       status: "available"
     },
     {
-      id: 27,
+      id: '27',
       col: 7,
       row: 0,
       status: "available"
     },
     {
-      id: 28,
+      id: '28',
       col: 5,
       row: 1,
       status: "available"
     },
     {
-      id: 29,
+      id: '29',
       col: 6,
       row: 1,
       status: "available"
     },
     {
-      id: 30,
+      id: '30',
       col: 7,
       row: 1,
       status: "available"
     },
     {
-      id: 31,
+      id: '31',
       col: 5,
       row: 2,
       status: "available"
     },
     {
-      id: 32,
+      id: '32',
       col: 6,
       row: 2,
       status: "available"
     },
     {
-      id: 33,
+      id: '33',
       col: 7,
       row: 2,
       status: "available"
     },
     {
-      id: 34,
+      id: '34',
       col: 5,
       row: 3,
       status: "available"
     },
     {
-      id: 35,
+      id: '35',
       col: 6,
       row: 3,
       status: "available"
     },
     {
-      id: 36,
+      id: '36',
       col: 7,
       row: 3,
       status: "available"
     },
     {
-      id: 37,
+      id: '37',
       col: 5,
       row: 4,
       status: "available"
     },
     {
-      id: 38,
+      id: '38',
       col: 6,
       row: 4,
       status: "selected"
     },
     {
-      id: 39,
+      id: '39',
       col: 7,
       row: 4,
       status: "booked"
     },
     {
-      id: 40,
+      id: '40',
       col: 5,
       row: 5,
       status: "available"
     },
     {
-      id: 41,
+      id: '41',
       col: 6,
       row: 5,
       status: "available"
     },
     {
-      id: 42,
+      id: '42',
       col: 7,
       row: 5,
       status: "selected"
     },
     {
-      id: 43,
+      id: '43',
       col: 5,
       row: 6,
       status: "available"
     },
     {
-      id: 44,
+      id: '44',
       col: 6,
       row: 6,
       status: "available"
     },
     {
-      id: 45,
+      id: '45',
       col: 7,
       row: 6,
       status: "available"
     },
     {
-      id: 46,
+      id: '46',
       col: 5,
       row: 7,
       status: "selected"
     },
     {
-      id: 47,
+      id: '47',
       col: 6,
       row: 7,
       status: "available"
     },
     {
-      id: 48,
+      id: '48',
       col: 7,
       row: 7,
-      status: "available"
+      status: "booked"
     }
   ];
 
@@ -299,7 +299,8 @@ function App() {
     <div className="App">
       {seats.map((seat) => {
         return (
-          <Chair
+          <Seat
+            size={25}
             status={seat.status}
             col={seat.col}
             row={seat.row}
