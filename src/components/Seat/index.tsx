@@ -5,7 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 
-function Chair({status, col, row, id}:{status:string, col:number, row:number, id:number}) {
+function Chair({size, status, col, row, id}:{size:number, status:string, col:number, row:number, id:string}) {
 
   
   return (
@@ -14,15 +14,29 @@ function Chair({status, col, row, id}:{status:string, col:number, row:number, id
       width:'10px',
       height:'10px',
       position:'absolute',
-      top:row*25 + 'px',
-      left:col*30 + 'px',
+      top:size/20 * row * 25 + 'px',
+      left:size/20 * col*30 + 'px',
     }}
     >
+            <div
+            style={{
+                position:'absolute',
+                borderRadius:'50%',
+                textAlign:'center',
+                lineHeight:'20px',
+                fontSize:size/2.1 + 'px',
+                fontWeight:'bold',
+                color:'white',
+                marginLeft:'9px',
+            }}
+            >
+                {id}
+            </div>
  <FontAwesomeIcon 
             icon={faCouch} 
             color={status==='available'?'green':status==='booked'?'blue':'red'} 
             style={{
-              fontSize:'20px'
+              fontSize: size + 'px'
             }}
             />
     </div>
