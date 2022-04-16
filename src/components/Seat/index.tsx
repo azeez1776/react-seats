@@ -27,11 +27,13 @@ function Chair({size, status, col, row, id}:{size:number, status:string, col:num
                 fontSize:size/2.1 + 'px',
                 fontWeight:'bold',
                 color:'white',
-                marginLeft:'9px',
+                marginLeft:size/2.4  + 'px',
+                marginTop:size<40?'0px':size/4.8 + 'px',
             }}
             >
                 {id}
             </div>
+            
  <FontAwesomeIcon 
             icon={faCouch} 
             color={status==='available'?'green':status==='booked'?'blue':'red'} 
